@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sistem Laundry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- STEP NAV -->
+    <div class="step-nav">
+        <span onclick="showStep('step1', event)" class="active">Step 1: Deskripsi</span>
+        <span onclick="showStep('step2', event)">Step 2: Aktor</span>
+        <span onclick="showStep('step3', event)">Step 3: Use Case</span>
+        <span onclick="showStep('step4', event)">Step 4: Hubungan</span>
+        <span onclick="showStep('step5', event)">Step 5: Diagram</span>
+        <span onclick="showStep('step6', event)">Step 6: Activity</span>
+        <span onclick="showStep('step7', event)">Step 7: Sequence</span>
+        <span onclick="showStep('step8', event)">Step 8: Class</span>
+        <span onclick="showStep('step9', event)">Step 9: Refleksi</span>
+        <span onclick="showStep('step10', event)">Step 10: Website</span>
+    </div>
+
+    <!-- STEP 1 -->
+    <div id="step1" class="step-content active">
+        <div class="card">
+            <h2>Step 1: Deskripsi Sistem</h2>
+            <p>
+                Sistem Informasi Laundry adalah platform digital untuk membantu admin dalam
+                mengelola data laundry pelanggan. Sistem ini mencakup input data,
+                perhitungan otomatis, serta status laundry seperti "Proses".
+            </p>
+        </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="step2" class="step-content">
+        <h2>Step 2: Identifikasi Aktor</h2>
+        <div class="grid">
+            <div class="actor-box">
+                <h3>User</h3>
+                <ul>
+                    <li>Register akun</li>
+                    <li>Login</li>
+                    <li>Melihat status laundry</li>
+                </ul>
+            </div>
+            <div class="actor-box">
+                <h3>Admin</h3>
+                <ul>
+                    <li>Login</li>
+                    <li>Input data laundry</li>
+                    <li>Mengelola data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div id="step3" class="step-content">
+        <h2>Step 3: Use Case</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>User</h3>
+                <ul>
+                    <li>Register</li>
+                    <li>Login</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Admin</h3>
+                <ul>
+                    <li>Login</li>
+                    <li>Input Laundry</li>
+                    <li>Melihat Data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div id="step4" class="step-content">
+        <h2>Step 4: Hubungan</h2>
+        <p>User berinteraksi dengan sistem untuk melihat status, sedangkan admin mengelola data laundry.</p>
+    </div>
+
+    <!-- STEP 5 -->
+    <div id="step5" class="step-content">
+        <h2>Step 5: Diagram</h2>
+        <div class="diagram-box">
+            <img src="diagram.png" class="diagram-img">
+        </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div id="step6" class="step-content">
+        <h2>Step 6: Activity Diagram</h2>
+        <ol>
+            <li>User login</li>
+            <li>Admin input data</li>
+            <li>Sistem menyimpan data</li>
+            <li>Status menjadi "Proses"</li>
+        </ol>
+        <div class="diagram-box">
+            <img src="activity.png" class="diagram-img">
+        </div>
+    </div>
+
+    <!-- STEP 7 -->
+    <div id="step7" class="step-content">
+        <h2>Step 7: Sequence Diagram</h2>
+        <div class="diagram-box">
+            <img src="sequence.png" class="diagram-img">
+        </div>
+    </div>
+
+    <!-- STEP 8 -->
+    <div id="step8" class="step-content">
+        <h2>Step 8: Class Diagram</h2>
+        <div class="diagram-box">
+            <img src="classdiagram.png" class="diagram-img">
+        </div>
+    </div>
+
+    <!-- STEP 9 -->
+    <div id="step9" class="step-content">
+        <h2>Step 9: Refleksi</h2>
+        <div class="card">
+            <p>
+                - Saya memilih potensi lokal laundry untuk dikembangkan secara digital karena usaha laundry sangat dibutuhkan masyarakat sehari-hari. Sistem digital membantu pengelolaan menjadi lebih cepat dan rapi.
+            </p>
+            <p>
+                - Tantangan yang dihadapi adalah keterbatasan pemahaman teknologi serta keamanan data.
+            </p>
+            <p>
+                - Sistem sebaiknya dikelola oleh admin yang memahami komputer agar berjalan dengan baik.
+            </p>
+            <p>
+                - Pengembangan selanjutnya dapat berupa notifikasi, laporan keuangan, dan sistem online.
+            </p>
+        </div>
+    </div>
+
+    <!-- STEP 10 -->
+    <div id="step10" class="step-content">
+        <h2>Step 10: Website Project</h2>
+        <div class="card">
+            <p>Klik link berikut untuk membuka website:</p>
+            <a href="https://potan1101.github.io/web/" target="_blank">
+                🚀 Buka Website Laundry
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
